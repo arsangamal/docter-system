@@ -1,0 +1,45 @@
+<div
+        class="rounded-sm border border-stroke bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1"
+>
+    <h4 class="mb-6 text-xl font-bold text-black dark:text-white">
+        Users List
+    </h4>
+
+    <div class="flex flex-col">
+        <div
+                class="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5"
+        >
+            <div class="p-2.5 xl:p-5">
+                <h5 class="text-sm font-medium uppercase xsm:text-base">ID</h5>
+            </div>
+            <div class="p-2.5 text-center xl:p-5">
+                <h5 class="text-sm font-medium uppercase xsm:text-base">Name</h5>
+            </div>
+            <div class="p-2.5 text-center xl:p-5">
+                <h5 class="text-sm font-medium uppercase xsm:text-base">Role</h5>
+            </div>
+        </div>
+
+
+        <div id="usertemplate" class="hidden">
+            <div
+                    class="grid grid-cols-3 border-b border-stroke dark:border-strokedark sm:grid-cols-5 "
+            >
+                <div class="flex items-center gap-3 p-2.5 xl:p-5">
+                    <p class="font-medium text-black dark:text-white sm:block">
+                        {{id}}
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <p class="font-medium text-black dark:text-white">{{name}}</p>
+                </div>
+
+                <div class="flex items-center justify-center p-2.5 xl:p-5">
+                    <p class="font-medium text-meta-3">{{role}}</p>
+                </div>
+            </div>
+        </div>
+        <div id="newoutput"></div>
+    </div>
+</div>

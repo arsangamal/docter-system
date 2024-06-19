@@ -1,0 +1,101 @@
+<aside
+        :class="sidebarToggle ? 'translate-x-0' : '-translate-x-full'"
+        class="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0"
+        @click.outside="sidebarToggle = false"
+>
+    <!-- SIDEBAR HEADER -->
+    <div class="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
+        <a href="index.html">
+            <h2 class="text-2xl font-extrabold text-white text-center">
+                Doctor System
+            </h2>
+        </a>
+
+        <button
+                class="block lg:hidden"
+                @click.stop="sidebarToggle = !sidebarToggle"
+        >
+            <svg
+                    class="fill-current"
+                    width="20"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                        d="M19 8.175H2.98748L9.36248 1.6875C9.69998 1.35 9.69998 0.825 9.36248 0.4875C9.02498 0.15 8.49998 0.15 8.16248 0.4875L0.399976 8.3625C0.0624756 8.7 0.0624756 9.225 0.399976 9.5625L8.16248 17.4375C8.31248 17.5875 8.53748 17.7 8.76248 17.7C8.98748 17.7 9.17498 17.625 9.36248 17.475C9.69998 17.1375 9.69998 16.6125 9.36248 16.275L3.02498 9.8625H19C19.45 9.8625 19.825 9.4875 19.825 9.0375C19.825 8.55 19.45 8.175 19 8.175Z"
+                        fill=""
+                />
+            </svg>
+        </button>
+    </div>
+    <!-- SIDEBAR HEADER -->
+
+    <div
+            class="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear"
+    >
+        <nav
+                class="mt-5 px-4 py-4 lg:mt-9 lg:px-6"
+                x-data="{selected: $persist('Doctor')}"
+        >
+            <div>
+                <h3 class="mb-4 ml-4 text-sm font-medium text-bodydark2">MENU</h3>
+
+                <ul class="mb-6 flex flex-col gap-1.5">
+                    <!-- Menu Item Profile -->
+                    <li>
+                        <a
+                                class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                                href="/"
+                                @click="selected = (selected === 'doctor' ? '':'doctor')"
+                                :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'doctor') && (page === 'doctor') }"
+
+                        >
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="18"
+                                    width="18"
+                                    class="fill-current"
+                                    viewBox="0 0 576 512"
+                            >
+                                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                        d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                                />
+                            </svg>
+
+                            Doctor
+                        </a>
+                    </li>
+                    <!-- Menu Item Profile -->
+
+                    <li>
+                        <a
+                                class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
+                                href="patients.html"
+                                @click="selected = (selected === 'patients' ? '':'patients')"
+                                :class="{ 'bg-graydark dark:bg-meta-4': (selected === 'patients') && (page === 'patients') }"
+                                :class="page === 'patients' && 'bg-graydark'"
+                        >
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="18"
+                                    width="18"
+                                    class="fill-current"
+                                    viewBox="0 0 640 512"
+                            >
+                                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                        d="M483.2 9.6L524 64h92c13.3 0 24 10.7 24 24s-10.7 24-24 24H512c-7.6 0-14.7-3.6-19.2-9.6L468.7 70.3l-47 99.9c-3.7 7.8-11.3 13.1-19.9 13.7s-16.9-3.4-21.7-10.6L339.2 112H216c-13.3 0-24-10.7-24-24s10.7-24 24-24H352c8 0 15.5 4 20 10.7l24.4 36.6 45.9-97.5C445.9 6.2 453.2 1 461.6 .1s16.6 2.7 21.6 9.5zM320 160h12.7l20.7 31.1c11.2 16.8 30.6 26.3 50.7 24.8s37.9-13.7 46.5-32L461.9 160H544c53 0 96 43 96 96V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V448H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V96C0 78.3 14.3 64 32 64s32 14.3 32 32V352H288V192c0-17.7 14.3-32 32-32zm-144 0a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+                                />
+                            </svg>
+
+                            Patients
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</aside>
