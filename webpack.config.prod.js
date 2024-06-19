@@ -2,6 +2,7 @@ const path = require('path')
 const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+var webpack = require('webpack')
 
 const INCLUDE_PATTERN = /<include src="(.+)"\s*\/?>(?:<\/include>)?/gi
 const processNestedHtml = (content, loaderContext, dir = null) =>
@@ -109,9 +110,12 @@ module.exports = {
       filename: 'style.css',
       chunkFilename: 'style.css',
     }),
+    new webpack.DefinePlugin({
+      SERVICE_URL: JSON.stringify(
+        'https://arsangamal.github.io/docter-system/'),
+    }),
   ],
   output: {
-    publicPath: '/docter-system/',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,

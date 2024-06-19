@@ -175,9 +175,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-Light.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-Light.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-Light.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-Light.woff2) format("woff2"),
+    url(src/fonts/Satoshi-Light.woff) format("woff"),
+    url(src/fonts/Satoshi-Light.ttf) format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
@@ -185,9 +185,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-LightItalic.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-LightItalic.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-LightItalic.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-LightItalic.woff2) format("woff2"),
+    url(src/fonts/Satoshi-LightItalic.woff) format("woff"),
+    url(src/fonts/Satoshi-LightItalic.ttf) format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: italic;
@@ -195,9 +195,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-Regular.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-Regular.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-Regular.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-Regular.woff2) format("woff2"),
+    url(src/fonts/Satoshi-Regular.woff) format("woff"),
+    url(src/fonts/Satoshi-Regular.ttf) format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -205,9 +205,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-Italic.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-Italic.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-Italic.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-Italic.woff2) format("woff2"),
+    url(src/fonts/Satoshi-Italic.woff) format("woff"),
+    url(src/fonts/Satoshi-Italic.ttf) format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
@@ -215,9 +215,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-Medium.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-Medium.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-Medium.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-Medium.woff2) format("woff2"),
+    url(src/fonts/Satoshi-Medium.woff) format("woff"),
+    url(src/fonts/Satoshi-Medium.ttf) format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -225,9 +225,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-MediumItalic.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-MediumItalic.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-MediumItalic.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-MediumItalic.woff2) format("woff2"),
+    url(src/fonts/Satoshi-MediumItalic.woff) format("woff"),
+    url(src/fonts/Satoshi-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: italic;
@@ -235,9 +235,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-Bold.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-Bold.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-Bold.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-Bold.woff2) format("woff2"),
+    url(src/fonts/Satoshi-Bold.woff) format("woff"),
+    url(src/fonts/Satoshi-Bold.ttf) format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -245,9 +245,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-BoldItalic.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-BoldItalic.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-BoldItalic.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-BoldItalic.woff2) format("woff2"),
+    url(src/fonts/Satoshi-BoldItalic.woff) format("woff"),
+    url(src/fonts/Satoshi-BoldItalic.ttf) format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: italic;
@@ -255,9 +255,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-Black.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-Black.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-Black.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-Black.woff2) format("woff2"),
+    url(src/fonts/Satoshi-Black.woff) format("woff"),
+    url(src/fonts/Satoshi-Black.ttf) format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
@@ -265,9 +265,9 @@ image, text, .jvm-zoomin, .jvm-zoomout {
 
 @font-face {
   font-family: "Satoshi";
-  src: url(/docter-system/src/fonts/Satoshi-BlackItalic.woff2) format("woff2"),
-    url(/docter-system/src/fonts/Satoshi-BlackItalic.woff) format("woff"),
-    url(/docter-system/src/fonts/Satoshi-BlackItalic.ttf) format("truetype");
+  src: url(src/fonts/Satoshi-BlackItalic.woff2) format("woff2"),
+    url(src/fonts/Satoshi-BlackItalic.woff) format("woff"),
+    url(src/fonts/Satoshi-BlackItalic.ttf) format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: italic;
@@ -2567,10 +2567,10 @@ body{
   background-size: 20px;
 }
 .custom-input-date-1::-webkit-calendar-picker-indicator {
-  background-image: url(/docter-system/src/images/icon/icon-calendar.svg);
+  background-image: url(src/images/icon/icon-calendar.svg);
 }
 .custom-input-date-2::-webkit-calendar-picker-indicator {
-  background-image: url(/docter-system/src/images/icon/icon-arrow-down.svg);
+  background-image: url(src/images/icon/icon-arrow-down.svg);
 }
 
 [x-cloak] {

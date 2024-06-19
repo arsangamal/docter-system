@@ -8,14 +8,14 @@ const processNestedHtml = (content, loaderContext, dir = null) =>
   !INCLUDE_PATTERN.test(content)
     ? content
     : content.replace(INCLUDE_PATTERN, (m, src) => {
-        const filePath = path.resolve(dir || loaderContext.context, src)
-        loaderContext.dependency(filePath)
-        return processNestedHtml(
-          loaderContext.fs.readFileSync(filePath, 'utf8'),
-          loaderContext,
-          path.dirname(filePath)
-        )
-      })
+      const filePath = path.resolve(dir || loaderContext.context, src)
+      loaderContext.dependency(filePath)
+      return processNestedHtml(
+        loaderContext.fs.readFileSync(filePath, 'utf8'),
+        loaderContext,
+        path.dirname(filePath),
+      )
+    })
 
 // HTML generation
 const paths = []
@@ -111,6 +111,7 @@ module.exports = {
     }),
   ],
   output: {
+    publicPath: 'http://testing.com/',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,
